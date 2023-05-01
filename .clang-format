@@ -1,0 +1,148 @@
+# void * function (
+#   int a,
+#   int b
+ContinuationIndentWidth: 4
+PackConstructorInitializers: NextLineOnly
+
+# ) {
+AlignAfterOpenBracket: BlockIndent
+BinPackParameters: AlwaysOnePerLine
+ExperimentalAutoDetectBinPacking: true
+
+# AllowAllArgumentsOnNextLine: false
+# AllowAllParametersOfDeclarationOnNextLine: false
+
+
+
+#  #define
+IndentPPDirectives: BeforeHash
+
+#  #define foo( x )         ( x * x )
+#  #define bar( y, z )      ( y + z )
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+
+# NO    if (true) ...
+# only  if (true) { }
+InsertBraces: true
+
+# *
+# PointerAlignment: Middle
+# SpaceAroundPointerQualifiers: Default
+
+#  int    a;
+#  int    somelongname;
+#  double c;
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignFunctionPointers: true
+  AlignCompound: true
+  PadOperators: true
+
+
+#  int    a            = 1;
+#  int    somelongname = 2;
+#  double c            = 3;
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignFunctionPointers: true
+  AlignCompound: true
+  PadOperators: true
+
+
+# (void *) 0;
+SpaceAfterCStyleCast: true
+
+#  switch () {
+#      case  () :
+#  }
+IndentCaseLabels: true
+
+#  case  () :
+SpaceBeforeCaseColon: true
+
+# ( )
+SpaceInEmptyParentheses: true
+
+# { }
+SpaceInEmptyBlock: true
+
+# int a [5][5];
+SpaceBeforeSquareBrackets: false
+
+# function ();
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterFunctionDefinitionName: true
+  AfterFunctionDeclarationName: true
+  AfterIfMacros: true
+  BeforeNonEmptyParentheses: true
+  AfterRequiresInExpression: true
+  AfterPlacementOperator: true
+
+
+# function ( f )
+SpacesInParentheses: true
+SpacesInAngles: false
+
+# int a;    // comment
+SpacesBeforeTrailingComments: 4
+
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterFunction: false
+  AfterControlStatement: MultiLine
+  AfterEnum: true
+  AfterStruct: true
+  SplitEmptyFunction: true
+  AfterCaseLabel: true
+
+
+#   char * aaaa = "bbbb"
+#                 "cccc";
+AlwaysBreakBeforeMultilineStrings: false
+
+
+#   int aaa = 1
+#             | ENUM_A
+#             | ENUM_B
+#             | ENUM_C;
+BreakBeforeBinaryOperators: true
+
+#   int a : 2;
+BitFieldColonSpacing: Both
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: false
+
+
+
+# misc
+
+#  LoooooooooooooooooooooooooooooooooooooooongReturnType
+#      LoooooooooooooooooooooooooooooooongFunctionDeclaration();
+# IndentWrappedFunctionNames: true
+
+# BreakTemplateDeclarations: MultiLine
+
+# for json
+BreakArrays: true
+
+
+# TrailingCommaStyle: true
+
+SeparateDefinitionBlocks: Always
+
+UseTab: ForContinuationAndIndentation
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 0
+
+InsertNewlineAtEOF: true

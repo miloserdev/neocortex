@@ -1,0 +1,19 @@
+.vscode/
+*.o
+
+# binaries
+configure
+dump
+filter.o
+neuro
+neuro_learn
+receiver
+.old/
+
+dataset/
+dataset_raw/
+etc/
+models/
+rules/
+tests/
+perceptron*
